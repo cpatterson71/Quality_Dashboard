@@ -16,6 +16,6 @@ with tab1:
     st.line_chart(x, y)
 
 with tab3:
-    buffer, col1, col2 = Agrid(
+    buffer, col1, col2 = 
 
 
