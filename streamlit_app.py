@@ -23,7 +23,9 @@ with tab1:
         y = first[]
     st.altair_chart
 
-with tab3:
+with tab2:
     buffer, col1, col2 = 
+
+with tab3:
 
 
