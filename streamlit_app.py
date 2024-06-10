@@ -27,5 +27,3 @@ with tab2:
     buffer, col1, col2 = 
 
 with tab3:
-
-
