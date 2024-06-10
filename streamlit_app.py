@@ -1,7 +1,7 @@
 #streamlit-app.py
 import altair as alt
 import streamlit as st
-import Quality_Data_Clean_Up 
+import pandas as pd
 from st_aggrid import Agrid
 
 st.set_page_config(layout='wide')
@@ -11,9 +11,17 @@ st.title('Quality Managment System Dashboard')
 tab1, tab2, tab3 = st.tabs(['Change Controls', 'Deivations and OOS', 'CAPAs and Complaints'])
 
 with tab1:
-    x = temp['Date Opened']
-    y = temp['Days Open']
+    col1, col2 = st.columns([20, 20]) 
+    with col1:
+        file = 'temp.csv'
+        first = pd.read_csv(file, index=False)
+        x = first['Date Opened']
+        y = first['Days Open']
     st.line_chart(x, y)
+    with col2:
+        x = first[]
+        y = first[]
+    st.altair_chart
 
 with tab3:
     buffer, col1, col2 = 
