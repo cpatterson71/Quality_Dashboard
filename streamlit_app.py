@@ -13,7 +13,7 @@ with tab1:
     col1, col2 = st.columns([20, 20]) 
     with col1:
         file = 'temp.csv'
-        first = pd.read_csv(file, index=False)
+        first = pd.read_csv(file)
         first = pd.DataFrame(first)
         x = first['Date Opened']
         y = first['Change Control'].count()
