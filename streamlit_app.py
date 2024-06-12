@@ -15,15 +15,16 @@ with tab1:
     with col1:
         file = 'temp.csv'
         first = pd.read_csv(file, index=False)
+        first = pd.DataFrame(first)
         x = first['Date Opened']
-        y = first['Days Open']
+        y = first['Change Control'].count()
     st.line_chart(x, y)
     with col2:
-        x = first[]
-        y = first[]
-    st.altair_chart
+        x1 = first['Date Opened']
+        y1 = first['Days Open']
+    st.bar_chart(x1, y1)
 
-with tab2:
-    buffer, col1, col2 = 
+# with tab2:
+#     buffer, col1, col2 = 
 
-with tab3:
+# with tab3:
