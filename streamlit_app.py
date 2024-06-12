@@ -16,8 +16,9 @@ with tab1:
         first = pd.read_csv(file)
         first = pd.DataFrame(first)
         x = first['Date Opened']
-        y = first['Change Control'].count()
+        y = first['Change Control'].count
     st.line_chart(x, y)
+
     with col2:
         x1 = first['Date Opened']
         y1 = first['Days Open']
