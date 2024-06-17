@@ -1,7 +1,7 @@
 #streamlit-app.py
-import altair as alt
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 st.set_page_config(layout='wide')
 st.title('Quality Managment System Dashboard')
@@ -12,17 +12,23 @@ tab1, tab2, tab3 = st.tabs(['Change Controls', 'Deivations and OOS', 'CAPAs and 
 with tab1:
     col1, col2 = st.columns([20, 20]) 
     with col1:
+        #load the data
         file = 'temp.csv'
-        first = pd.read_csv(file)
-        first = pd.DataFrame(first)
-        x = first['Date Opened']
-        y = first['Change Control'].count
-    st.line_chart(x, y)
+        data = pd.read_csv(file)
+        first = pd.DataFrame(data)
 
-    with col2:
-        x1 = first['Date Opened']
-        y1 = first['Days Open']
-    st.bar_chart(x1, y1)
+    #     #create x axis groupby year
+    #     x_axis = first['Date Opened'].groupby(['Date'] )
+
+        
+        
+    #     #create line chart
+    #     fig = px.line_ternary(first, x='Date Opened', y=])
+
+    # with col2:
+    #     x1 = first['Date Opened']
+    #     y1 = first['Days Open']
+    # st.bar_chart(x1, y1)
 
 # with tab2:
 #     buffer, col1, col2 = 
