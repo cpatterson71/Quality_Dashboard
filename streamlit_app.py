@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import datetime
+import datetime as dt
 
 st.set_page_config(layout='wide')
 st.title('Quality Managment System Dashboard')
@@ -19,7 +19,7 @@ with tab1:
         first = pd.DataFrame(data)
 
     #   #create x axis from 'Date Opened' to year
-        x_axis = first['Date Opened'].datetime.date.year
+        x_axis = first['Date Opened'].dt.date.year
 
         #create y axis using count of change control number
         y_axis = first['Change Control'].count()
