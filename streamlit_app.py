@@ -10,8 +10,8 @@ st.title('Quality Managment System Dashboard')
 
 #load the data
 file = 'temp.csv'
-data = pd.read_csv(file)
-first = pd.DataFrame(data).values
+data = pd.read_csv(file, index_col=False)
+first = pd.DataFrame(data)
 
 second = first.loc[:,['Date Opened', 'Change Control', 'Days Open']]
  
