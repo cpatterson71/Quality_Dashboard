@@ -17,7 +17,7 @@ second = first.loc[:,['Date_Opened', 'Change_Control', 'Days_Open']]
  
 
 #create x axis and strp down to date in Date Opened colum
-tests = second['Date Opened'].astype(str)
+tests = second['Date_Opened'].astype(str)
 dates = []
 for test in tests:
     dates.append(test[:-6])
@@ -32,10 +32,10 @@ with tab1:
     col1, col2 = st.columns([20, 20]) 
     with col1:
         
-        x_axis = second['Date Opened']
+        x_axis = second['Date_Opened']
 
         #create y axis using count of change control number
-        y_axis = second['Change Control'].count
+        y_axis = second['Change_Control'].count
 
         #create bar chart using x_axis and y_axis
         fig = px.bar(first, x=x_axis, y=y_axis)
