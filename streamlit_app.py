@@ -22,7 +22,7 @@ dates = []
 for test in tests:
     dates.append(test[:-6])
 
-second['Date Opened']= dates
+second['Date_Opened']= dates
 
 
 #set up tabs
