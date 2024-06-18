@@ -22,7 +22,7 @@ dates = []
 for test in tests:
     dates.append(test[:-6])
 
-second['Date Opend']= dates
+second['Date Opened']= dates
 
 
 #set up tabs
@@ -35,7 +35,7 @@ with tab1:
         x_axis = second['Date_Opened']
 
         #create y axis using count of change control number
-        y_axis = second['Change_Control'].count
+        y_axis = second['Change_Control'].count()
 
         #create bar chart using x_axis and y_axis
         fig = px.bar(second, x=x_axis, y=y_axis)
