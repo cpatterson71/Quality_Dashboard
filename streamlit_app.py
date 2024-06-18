@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from datetime import datetime
-from dateutil.parser import parse
+
 
 st.set_page_config(layout='wide')
 st.title('Quality Managment System Dashboard')
