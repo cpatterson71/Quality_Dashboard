@@ -13,7 +13,7 @@ file = 'temp.csv'
 data = pd.read_csv(file, index_col=False)
 first = pd.DataFrame(data)
 
-second = first.loc[:,['Date Opened', 'Change Control', 'Days Open']]
+second = first.loc[:,['Date_Opened', 'Change_Control', 'Days_Open']]
  
 
 #create x axis and strp down to date in Date Opened colum
