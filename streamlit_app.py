@@ -34,7 +34,7 @@ with tab1:
         x_axis = first['Date Opened']
 
         #create y axis using count of change control number
-        y_axis = first['Change Control'].count()
+        y_axis = first['Change Control'].count
 
         #create bar chart using x_axis and y_axis
         fig = px.bar(first, x=x_axis, y=y_axis)
