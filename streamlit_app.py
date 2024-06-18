@@ -38,7 +38,7 @@ with tab1:
         y_axis = second['Change_Control'].count
 
         #create bar chart using x_axis and y_axis
-        fig = px.bar(first, x=x_axis, y=y_axis)
+        fig = px.bar(second, x=x_axis, y=y_axis)
 
         fig.show()
 
