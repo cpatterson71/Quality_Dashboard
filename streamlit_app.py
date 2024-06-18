@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import datetime as dt
+from datetime import strptime as st
 
 st.set_page_config(layout='wide')
 st.title('Quality Managment System Dashboard')
@@ -19,7 +19,8 @@ with tab1:
         first = pd.DataFrame(data)
 
     #   #create x axis from 'Date Opened' to year
-        x_axis = first['Date Opened'].dt.date.year
+        first['Date Opened'] = first.st(first['Date Opened'], '%YYYY')
+        x_axis = first['Date Opened']
 
         #create y axis using count of change control number
         y_axis = first['Change Control'].count()
@@ -28,9 +29,6 @@ with tab1:
         fig = px.bar(first, x=x_axis, y=y_axis)
         fig.show()
 
-        
-
-        
         
     #     #create line chart
     #     fig = px.line_ternary(first, x='Date Opened', y=])
