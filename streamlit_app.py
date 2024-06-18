@@ -11,9 +11,10 @@ st.title('Quality Managment System Dashboard')
 #load the data
 file = 'temp.csv'
 data = pd.read_csv(file)
-first = pd.DataFrame(data)
+first = pd.DataFrame(data).values
 
 second = first.loc[:,['Date Opened', 'Change Control', 'Days Open']]
+ 
 
 #create x axis and strp down to date in Date Opened colum
 tests = second['Date Opened'].astype(str)
