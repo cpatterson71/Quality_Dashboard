@@ -19,7 +19,7 @@ first = pd.DataFrame(data)
 #create x axis and strp down to date in Date Opened colum
 x = first['Date Opened'].astype(str)
 y = []
-for x in xs:
+for x in x:
     y.append(x[:-6])
 
 first['Date Opened'] = y
