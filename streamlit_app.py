@@ -23,7 +23,7 @@ for test in tests:
     dates.append(test[:-6])
 
 second['Date_Opened']= dates
-
+second.to_csv('temp.csv', index=False)
 
 #set up tabs
 tab1, tab2, tab3 = st.tabs(['Change Controls', 'Deivations and OOS', 'CAPAs and Complaints'])
