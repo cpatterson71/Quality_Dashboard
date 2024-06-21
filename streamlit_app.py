@@ -22,7 +22,9 @@ file2 = 'temp2.csv'
 data2 = pd.read_csv(file2)
 first2 = pd.DataFrame(data2)
 
-file3 = 'temp'
+file3 = 'temp3.csv'
+data3= pd.read_csv(file3)
+first3 = pd.DataFrame(data3)
 
 #set up tabs
 tab1, tab2, tab3 = st.tabs(['Change Controls', 'Deivations and OOS', 'CAPAs and Complaints'])
@@ -37,12 +39,16 @@ with tab1:
         fig = px.bar(second, x=x_axis, y=y_axis)
     st.write(fig)
 
-    with col2:
+    # with col2:
         #need to get number of change controls per month then year
         #use a chart similar to what was done above. 
-        with tab2:
-            col1, col2 = st.columns([100, 2])
-            with col1:
-               AgGrid(data2, height=300, use_container_width=True)
+    with tab2:
+         col3, col4 = st.columns([20, 20])
+         with col3:
+            AgGrid(data2, height=300)
+
+         with col4:
+            AgGrid(first3, height=300)
+        
+    # with tab3:
             
-           # with col2:

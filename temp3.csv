@@ -1,13 +1,13 @@
-Date:,Requester:,Client Code:,LIR #:,Test Method,Test:
-3/2/2021,Jason Gilbert,ADJ,LIR-OOS-2021-001,,Impurities
-6/18/2021,Amera Kcheck Jason Gilbert,DAV,LIR-OOS-2021-002,,Pfat
-7/23/2021,Jason Gilbert ,DAV,LIR-OOS-2021-003,,Zeta Potential
-12/3/2021,Neha Soni,DAV,LIR-OOS-2021-004,,Extractable Volume
-1/5/2022,Jason Gilbert,CPL,LIR-OOS-2022-001,,Particulate Matter
-2/22/2022,Giang Tran,TAC,LIR-OOS-2022-002,,Assay HPLC
-3/18/2022,Viet Ngo,DAV,LIR-OOS-2022-003,,Pfat
-6/8/2022,Neha Soni,DAV,LIR-OOS-2022-004,,Pfat
-6/29/2022,Giang Tran,DAV,LIR-OOS-2022-005,,Impurities
-7/21/2022,Neha Soni,,LIR-OOS-2022-006,,%Assay
-7/25/2022,Ling Chen,HDT,LIR-OOS-2022-007,LPI-SOP-118,Extractable Volume
-7/28/2022,Ling Chen,HDT,LIR-OOS- 2022-008 ,,Osmolality
+Date,Requester,Client Code:,LIR_Number,Test Method,Test,,Date Closed
+3/2/2021,Jason Gilbert,ADJ,LIR-OOS-2021-001,,Impurities,,
+6/18/2021,Amera Kcheck Jason Gilbert,DAV,LIR-OOS-2021-002,,Pfat,,
+7/23/2021,Jason Gilbert ,DAV,LIR-OOS-2021-003,,Zeta Potential,,
+12/3/2021,Neha Soni,DAV,LIR-OOS-2021-004,,Extractable Volume,,
+1/5/2022,Jason Gilbert,CPL,LIR-OOS-2022-001,,Particulate Matter,,
+2/22/2022,Giang Tran,TAC,LIR-OOS-2022-002,,Assay HPLC,,
+3/18/2022,Viet Ngo,DAV,LIR-OOS-2022-003,,Pfat,,
+6/8/2022,Neha Soni,DAV,LIR-OOS-2022-004,,Pfat,,
+6/29/2022,Giang Tran,DAV,LIR-OOS-2022-005,,Impurities,,
+7/21/2022,Neha Soni,,LIR-OOS-2022-006,,%Assay,,
+7/25/2022,Ling Chen,HDT,LIR-OOS-2022-007,LPI-SOP-118,Extractable Volume,,
+7/28/2022,Ling Chen,HDT,LIR-OOS- 2022-008 ,,Osmolality,,
