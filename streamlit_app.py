@@ -12,7 +12,7 @@ file = 'temp.csv'
 data = pd.read_csv(file, index_col=False)
 first = pd.DataFrame(data)
 
-second = first.loc[:,['Date Opened', 'Change Control', 'Days Open']]
+second = first.loc[:,['Date Opened', 'Change Control', 'Days Open', 'Year']]
  
 #create x axis and strp down to date in Date Opened 
 second.to_csv('temp.csv', index=False)
@@ -26,16 +26,21 @@ file3 = 'temp3.csv'
 data3= pd.read_csv(file3)
 first3 = pd.DataFrame(data3)
 
+
+
+
 #set up tabs
 tab1, tab2, tab3 = st.tabs(['Change Controls', 'Deivations and OOS', 'CAPAs and Complaints'])
 
 with tab1:
     col1, col2 = st.columns([20, 20]) 
     with col1:
-        # year = st.date_input('Input Deginning Date MM/DD/YYYY', format='MM/DD/YYYY')
-        # filter = first.loc[(second['Date Opened'] >= 'year')]
-        x_axis = second['Date Opened']
-        y_axis = second['Days Open']
+        #group by year
+        number_CC = second.groupby(['Year']).mean()['Days Open']
+        #need average per year days open
+
+        x_axis = second['Year']
+        y_axis = number_CC
         fig = px.bar(second, x=x_axis, y=y_axis)
     st.write(fig)
 
