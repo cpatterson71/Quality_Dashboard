@@ -45,7 +45,6 @@ with tab1:
          col3, col4 = st.columns([300, 20])
          with col3:
             AgGrid(first3, height=300)
-        
-    # with tab3:st
+
 
             
