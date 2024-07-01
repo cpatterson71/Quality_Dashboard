@@ -38,8 +38,8 @@ with tab1:
 
     with col2:
         third = pd.read_csv('Change_Year.csv', index_col=False)
-        xp_axis = third.groupby('Year').value
-        yp_axis = third['Count'].value
+        xp_axis = third['Year']
+        yp_axis = third['Count']
         fig = px.bar(third,x=xp_axis, y=yp_axis )
 
     with col3:
