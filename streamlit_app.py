@@ -27,9 +27,9 @@ first3 = pd.DataFrame(data3)
 tab1, tab2, tab3 = st.tabs(['Change Controls and Documents', 'Deviations and OOS', 'CAPAs and Complaints'])
 
 with tab1:
-    col1, col2, col3 = st.columns([20, 200, 200]) 
+    col1, col2, col3 = st.columns([1, 1, 120]) 
     with col1:
-        second = pd.read_csv('Year.csv', index_col=False)
+        second = pd.read_csv('Avg Days Open.csv')
         #group by year
         x_axis = second['Year']
         y_axis = second['Average Days Open']
@@ -37,13 +37,14 @@ with tab1:
     st.write(fig)
 
     with col2:
-        third = pd.read_csv('Change_Year.csv', index_col=False)
+        third = pd.read_csv('Number per Year.csv')
         xp_axis = third['Year']
         yp_axis = third['Count']
         fig = px.bar(third,x=xp_axis, y=yp_axis )
+    st.write(fig)
 
     with col3:
-        AgGrid(data2, height=400)
+        AgGrid(first, height=400)
 
         #need to get number of change controls per month then year
         #use a chart similar to what was done above. 
