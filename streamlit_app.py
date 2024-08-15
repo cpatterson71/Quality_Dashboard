@@ -10,7 +10,7 @@ st.subheader('Quality Dashboard that collects data from the various spreadsheets
              'it in a condensed version that can be reviewed.')
 
 #load the data
-file = 'temp.csv'
+file = 'Open_Docs.csv'
 data = pd.read_csv(file, index_col=False)
 first = pd.DataFrame(data)
 
@@ -49,9 +49,12 @@ with tab1:
         #need to get number of change controls per month then year
         #use a chart similar to what was done above. 
     with tab2:
-         col4, col5 = st.columns([300, 20])
+         col4, col5 = st.columns([120, 120])
          with col4:
             AgGrid(first3, height=300)
+
+         with col5:
+             AgGrid()
 
 
             
