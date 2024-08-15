@@ -19,7 +19,7 @@ file2 = 'temp2.csv'
 data2 = pd.read_csv(file2)
 first2 = pd.DataFrame(data2)
 
-file3 = 'temp3.csv'
+file3 = 'OOS_Open.csv'
 data3= pd.read_csv(file3)
 first3 = pd.DataFrame(data3)
 
@@ -51,10 +51,10 @@ with tab1:
     with tab2:
          col4, col5 = st.columns([120, 120])
          with col4:
-            AgGrid(first3, height=300)
+            AgGrid(, height=300)
 
          with col5:
-             AgGrid()
+             AgGrid(first3, height=300)
 
 
             
