@@ -15,13 +15,24 @@ data = pd.read_csv(file, index_col=False)
 first = pd.DataFrame(data)
 
 #create table of Deviations and OOS
-file2 = 'temp2.csv'
+file2 = 'Open_Dev.csv'
 data2 = pd.read_csv(file2)
 first2 = pd.DataFrame(data2)
 
+#file of Open OOS
 file3 = 'OOS_Open.csv'
 data3= pd.read_csv(file3)
 first3 = pd.DataFrame(data3)
+
+#file of Open CAPA
+file4 = 'Open_CAPA.csv'
+data4= pd.read_csv(file4)
+first4 = pd.DataFrame(data4)
+
+#file of Open complaints
+file5 = 'Open_comp.csv'
+data5= pd.read_csv(file5)
+first5 = pd.DataFrame(data5)
 
 #set up tabs
 tab1, tab2, tab3 = st.tabs(['Change Controls and Documents', 'Deviations and OOS', 'CAPAs and Complaints'])
@@ -51,10 +62,18 @@ with tab1:
     with tab2:
          col4, col5 = st.columns([120, 120])
          with col4:
-            AgGrid(, height=300)
+            AgGrid(first2, height=300)
 
          with col5:
              AgGrid(first3, height=300)
+
+    with tab3:
+        col6, col7 = st.columns([100, 100])
+        with col6:
+            AgGrid(first4, height=300)
+        
+        with col7:
+            AgGrid(first5, height=300)
 
 
             
