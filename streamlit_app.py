@@ -38,7 +38,7 @@ first5 = pd.DataFrame(data5)
 tab1, tab2, tab3 = st.tabs(['Change Controls and Documents', 'Deviations and OOS', 'CAPAs and Complaints'])
 
 with tab1:
-    col1, col2, col3 = st.columns([1, 1, 120]) 
+    col1, col2, col3 = st.columns([120, 1, 1]) 
     with col3:
         second = pd.read_csv('Avg Days Open.csv')
         #group by year
