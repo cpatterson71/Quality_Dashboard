@@ -68,9 +68,9 @@ with tab1:
              AgGrid(first3, height=300)
 
          with col8:
-            third = pd.read_csv('Open_Dev.csv')
+            third = pd.read_csv('Average_Deviation_per_Year.csv')
             xp_axis = third['Year']
-            yp_axis = third['Count']
+            yp_axis = third['Days Open']
             fig = px.bar(third,x=xp_axis, y=yp_axis ) 
 
     with tab3:
