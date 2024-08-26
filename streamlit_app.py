@@ -69,9 +69,9 @@ with tab2:
 
     with col8:
         third = pd.read_csv('Average_Devation_per_Year.csv')
-        xp_axis = third['Year']
-        yp_axis = third['Average Days Open']
-        fig = px.bar(third,x=xp_axis, y=yp_axis ) 
+        d_axis = third['Year']
+        f_axis = third['Average Days Open']
+        fig = px.bar(third,x=d_axis, y=f_axis ) 
 
     with tab3:
         col6, col7 = st.columns([100, 100])
