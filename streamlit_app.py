@@ -55,7 +55,7 @@ with tab1:
     st.write(fig)
 
     with col3:
-        AgGrid(first, height=400)
+        AgGrid('Open_Docs.csv', height=400)
 
         #need to get number of change controls per month then year
         #use a chart similar to what was done above. 
