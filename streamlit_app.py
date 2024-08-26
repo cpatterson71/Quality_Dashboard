@@ -70,7 +70,7 @@ with tab1:
          with col8:
             third = pd.read_csv('Average_Deviation_per_Year.csv')
             xp_axis = third['Year']
-            yp_axis = third['Days Open']
+            yp_axis = third['Average Days Open']
             fig = px.bar(third,x=xp_axis, y=yp_axis ) 
 
     with tab3:
