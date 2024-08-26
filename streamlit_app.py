@@ -55,8 +55,8 @@ with tab1:
     st.write(fig)
 
     with col1:
-        first = pd.read_csv('Open_Docs.csv')
-        AgGrid(first, height=300)
+        y = pd.read_csv('Open_Docs.csv')
+        AgGrid(y, height=300)
 
         #need to get number of change controls per month then year
         #use a chart similar to what was done above. 
