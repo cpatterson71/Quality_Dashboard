@@ -61,18 +61,18 @@ with tab1:
         #need to get number of change controls per month then year
         #use a chart similar to what was done above. 
 with tab2:
-    col4, col5, col8 = st.columns([120, 120, 120])
+    col4, col5 = st.columns([120, 120])
     with col4:
         AgGrid(first2, height=300)
 
     with col5:
         AgGrid(first3, height=300)
 
-    with col8:
-        third = pd.read_csv('Average_Devation_per_Year.csv')
-        d_axis = third['Year']
-        f_axis = third['Average Days Open']
-        fig = px.bar(third,x=d_axis, y=f_axis ) 
+    # with col8:
+    #     third = pd.read_csv('Average_Devation_per_Year.csv')
+    #     d_axis = third['Year']
+    #     f_axis = third['Average Days Open']
+    #     fig = px.bar(third,x=d_axis, y=f_axis ) 
 
     with tab3:
         col6, col7 = st.columns([100, 100])
