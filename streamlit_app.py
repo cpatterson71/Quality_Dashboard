@@ -11,7 +11,7 @@ st.subheader('Quality Dashboard that collects data from the various spreadsheets
 
 #load the data
 file = 'Open_Docs.csv'
-data = pd.read_csv(file, index_col=False)
+data = pd.read_csv(file)
 first = pd.DataFrame(data)
 
 #create table of Deviations and OOS
