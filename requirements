@@ -1,0 +1,8 @@
+pandas
+numpy
+xlwings
+datetime
+boto3
+streamlit
+plotly 
+st_aggrid
