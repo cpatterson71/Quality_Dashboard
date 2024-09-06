@@ -4,5 +4,5 @@ xlwings
 datetime
 boto3
 streamlit
-plotly.express 
+plotly 
 st_aggrid
